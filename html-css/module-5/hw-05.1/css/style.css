@@ -272,11 +272,14 @@ h2::after{
     padding-top: 79px;
     text-align: center;
     position: absolute;
-    width: 255px;
+    width: 235px;
     top: 0;
 }
 
-.icon-but{
+.icon-like,
+.icon-shuffle,
+.icon-clock,
+.icon-cart{
     
     display: inline-block;
     width: 48px;
