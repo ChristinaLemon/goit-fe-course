@@ -255,19 +255,21 @@ h2::after{
     display: inline-block;
     position: absolute;
     top: 0;
-    left: 0;
+    left: 10px;
     width: 235px;
-    height: 261px;
+    height: 275px;
     background-color: rgba(50, 50, 50, 0.549);
-    border-width: 10px;
+    /*border-width: 10px;
     border-color:rgb(255, 255, 255);
-    border-style: solid;
+    border-style: solid;*/
     z-index: 1;
     opacity: 0;
     padding: 0;
     margin: 0;
    
 }
+
+
 .icon{
     padding-top: 79px;
     text-align: center;
