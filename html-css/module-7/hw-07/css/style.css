@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  .container{
+      width: 940px;
+      margin: 0 auto;
+  }
+
+  .menu{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 128px;
+  }
+
+  .menu-nav{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    text-transform: uppercase;
+    width: 485px;
+  }
+
+  .menu-nav a{
+    text-decoration: none;
+    font-size: 14px;
+    color: #222222;
+  }
+
+  .menu-nav a:hover{
+    color: #fed136;;
+  }
+
+  h2{
+    font-size: 40px;
+    color: #222222;
+    text-align: center;
+    text-transform: uppercase ;
+    
+  }
+
+  .text{
+    text-align: center;
+    color: #777777;
+    font-size: 16px;
+    line-height: 1.2;
+    margin-bottom: 78px;
+  }
+  
+  .icon-list{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+  }
+
+  .icon-basket::before{
+    content: '';
+    background-image: url(../image/Icon-Basket.png);
+    width: 40px;
+    height: 39px;
+    display: inline-block;
+    border: 3px solid #fed136;
+    background-color: #ffffff;
+    border-radius: 50%;
+    padding: 31px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 28px;
+  }
+
+  .icon-laptop::before{
+    content: '';
+    background-image: url(../image/Icon-Laptop.png);
+    width: 40px;
+    height: 39px;
+    display: inline-block;
+    border: 3px solid #fed136;
+    background-color: #ffffff;
+    border-radius: 50%;
+    padding: 31px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 28px;
+  }
+
+  .icon-locked::before{
+    content: '';
+    background-image: url(../image/Icon-Locked.png);
+    width: 40px;
+    height: 39px;
+    display: inline-block;
+    border: 3px solid #fed136;
+    background-color: #ffffff;
+    border-radius: 50%;
+    padding: 31px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 28px;
+  }
+
+  
