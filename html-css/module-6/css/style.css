@@ -244,6 +244,9 @@ h3{
     
 }
 
+img{
+    display: block;
+}
 .overlay{
     position: absolute;
     top: 0;
