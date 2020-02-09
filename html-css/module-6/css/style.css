@@ -138,6 +138,8 @@ h2::after{
 .features-list-item::before{
     content: '';
     position: absolute;
+    top: 0;
+    left: 0;
     display: block;
     height: 31px;
     width: 32px;
@@ -146,7 +148,7 @@ h2::after{
 
 .icon-alarm::before{
     background-image: url(../image/alarm.png);
-    
+    position: absolute;
 }
 
 .icon-graph::before{
@@ -203,18 +205,25 @@ h3{
     position: relative;
 }
 
-
+.team-list-item{
+    width: 380px;
+}
 .team-list-card{
     margin-bottom: 30px;
+    position: relative;
+}
 
+.team-foto:hover{
+   
+   
 }
 
 .overlay{
     position: absolute;
     top: 0;
     background-image: linear-gradient(to top, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%);
-    height: 470px;
-    width: 380px;
+    width: 100%;
+    height: 100%;
     opacity: 0;
     z-index: 1;
     display: flex;
@@ -235,6 +244,7 @@ h3{
     border: 1px solid rgba(243, 129, 129, 0.5);
     background-repeat: no-repeat;
     background-position: center;
+    
 }
 
 .visually-hidden:not(:focus):not(:active) { 
@@ -249,6 +259,7 @@ h3{
 
 .icon-facebook{
     background-image: url(../image/facebook.png);
+    
 }
 .icon-twitter{
     background-image: url(../image/twitter.png);
@@ -271,17 +282,18 @@ h3{
 .team-list-card:hover .overlay{
     box-shadow: 10px 10px 0px 0px #95e1d3;
     transform: translate(-10px, -10px);
-    transition: opacity 200ms linear, color 200ms linear;
+    transition: all 200ms linear;
     opacity: 1;
+}
+
+.team-list-card:hover .team-foto{
+    transform: translate(-10px, -10px);
 }
 
 .team-foto{
     display: block;
 }
 
-.team-foto:hover{
-    transition: opacity 200ms linear, color 200ms linear;
-}
 
 .teams{
     text-align: center;
@@ -292,7 +304,8 @@ h3{
     padding: 0;
 }
  .team-list-occupation{
-    font-family: 'Roboto', cursive;
+    font-family: 'Roboto';
+    font-style: italic;
     font-size: 15px;
     
 }
@@ -306,11 +319,18 @@ input{
 
 .form-control{
     color: rgb(204, 204, 204);
-    font-family: "Roboto - Light Italic";
+    
     font-size: 15px;
     font-weight: 400;
     line-height: 24px;
-    margin-left: 13px;
+    padding-left: 13px;
+    border-right: none;
+}
+
+::placeholder{
+    color: #cccccc;
+    font-family: "Roboto";
+    font-style: italic;
 }
 
 button{
@@ -343,6 +363,7 @@ button{
     color: #f38181;;
     line-height: 41px;
 }
+
 .b-footer::before{
     content: '';
     background-color: rgb(229, 229, 229);
@@ -351,3 +372,6 @@ button{
     margin-bottom: 12px;
 }
 
+.form{
+    display: flex;
+}
