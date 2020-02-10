@@ -10,102 +10,250 @@ html {
     box-sizing: inherit;
   }
 
-  .container{
-      width: 940px;
-      margin: 0 auto;
-  }
+/* montserrat-regular - latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Montserrat Regular'), local('Montserrat-Regular'),
+       url('../fonts/montserrat-v14-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/montserrat-v14-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* montserrat-700 - latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Montserrat Bold'), local('Montserrat-Bold'),
+       url('../fonts/montserrat-v14-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/montserrat-v14-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
 
-  .menu{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 50px;
-    margin-bottom: 128px;
-  }
+/* roboto-slab-regular - latin */
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+       url('../fonts/roboto-slab-v11-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/roboto-slab-v11-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
 
-  .menu-nav{
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
-    text-transform: uppercase;
-    width: 485px;
-  }
+.container{
+  width: 940px;
+  margin: 0 auto;   
+}
 
-  .menu-nav a{
-    text-decoration: none;
-    font-size: 14px;
-    color: #222222;
-  }
+main{
+  padding-bottom: 120px;
+}
 
-  .menu-nav a:hover{
-    color: #fed136;;
-  }
+.menu{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  margin-bottom: 128px;
+}
 
-  h2{
-    font-size: 40px;
-    color: #222222;
-    text-align: center;
-    text-transform: uppercase ;
-    
-  }
+.logo{
+  font-size: 26px;
+  font-family: 'Kaushan Script', cursive;
+  color: #fed136;
+  line-height: 1.577;
+  text-decoration: none;
+}
 
-  .text{
-    text-align: center;
-    color: #777777;
-    font-size: 16px;
-    line-height: 1.2;
-    margin-bottom: 78px;
-  }
+.menu-nav{
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  text-transform: uppercase;
+  width: 485px;
+  align-items: center;
+}
+
+.menu-nav li a{
+  font-family: 'Montserrat';
+  font-weight: 400;
+  text-decoration: none;
+  font-size: 14px;
+  color: #222222;
+}
+
+.menu-nav a:hover{
+  color: #fed136;;
+}
+
+h2{
+  font-family: 'Montserrat';
+  font-weight: 700;
+  font-size: 40px;
+  color: #222222;
+  text-align: center;
+  text-transform: uppercase ;  
+}
+
+.text{
+  text-align: center;
+  color: #777777;
+  font-size: 16px;
+  line-height: 1.2;
+  margin-bottom: 78px;
+  font-family: 'Sriracha', cursive;
+}
   
-  .icon-list{
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    text-align: center;
-  }
+.icon-list{
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
 
-  .icon-basket::before{
-    content: '';
-    background-image: url(../image/Icon-Basket.png);
-    width: 40px;
-    height: 39px;
-    display: inline-block;
-    border: 3px solid #fed136;
-    background-color: #ffffff;
-    border-radius: 50%;
-    padding: 31px;
-    background-repeat: no-repeat;
-    background-position: center;
-    margin-bottom: 28px;
-  }
+.icon-basket::before{
+  content: '';
+  background-image: url(../image/Icon-Basket.png);
+  width: 40px;
+  height: 39px;
+  display: inline-block;
+  border: 3px solid #fed136;
+  background-color: #ffffff;
+  border-radius: 50%;
+  padding: 31px;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 28px;
+}
 
-  .icon-laptop::before{
-    content: '';
-    background-image: url(../image/Icon-Laptop.png);
-    width: 40px;
-    height: 39px;
-    display: inline-block;
-    border: 3px solid #fed136;
-    background-color: #ffffff;
-    border-radius: 50%;
-    padding: 31px;
-    background-repeat: no-repeat;
-    background-position: center;
-    margin-bottom: 28px;
-  }
+.icon-laptop::before{
+  content: '';
+  background-image: url(../image/Icon-Laptop.png);
+  width: 40px;
+  height: 39px;
+  display: inline-block;
+  border: 3px solid #fed136;
+  background-color: #ffffff;
+  border-radius: 50%;
+  padding: 31px;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 28px;
+}
 
-  .icon-locked::before{
-    content: '';
-    background-image: url(../image/Icon-Locked.png);
-    width: 40px;
-    height: 39px;
-    display: inline-block;
-    border: 3px solid #fed136;
-    background-color: #ffffff;
-    border-radius: 50%;
-    padding: 31px;
-    background-repeat: no-repeat;
-    background-position: center;
-    margin-bottom: 28px;
-  }
+.icon-locked::before{
+  content: '';
+  background-image: url(../image/Icon-Locked.png);
+  width: 40px;
+  height: 39px;
+  display: inline-block;
+  border: 3px solid #fed136;
+  background-color: #ffffff;
+  border-radius: 50%;
+  padding: 31px;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 28px;
+}
 
+h3{
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+
+.icon-list p{
+  font-family: 'Roboto Slab';
+  font-size: 14px;
+  width: 274px;
+  color: #777777;
+  font-weight: 400;
+}
+
+footer{
+  background-image: url(../image/map.png);
+  height: 676px;
+}
   
+.f-heading{
+  color: #ffffff;
+  padding-top: 110px;
+  padding-bottom: 22px;
+}
+
+.form{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.form-list{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 455px;
+
+}
+ .form-control{
+  width: 457px;
+  height: 52px;
+  border: 1px solid #cccccc;
+  margin-bottom: 28px;
+  padding-left: 21px;
+  outline: none;
+  
+}
+
+.form-control:last-child{
+  margin-bottom: 0;
+}
+
+textarea{
+  width: 455px;
+  padding: 20px 0px 0px 20px;
+  resize: none;
+  outline: none;
+}
+input[type="text"]:valid:focus:not(:last-child),
+input[type="email"]:valid:focus,
+textarea:valid:focus{
+  
+  outline: 3px solid green;
+}
+
+input[type="text"]:invalid:focus:not(:last-child),
+input[type="email"]:invalid:focus,
+textarea:invalid:focus{
+  
+  outline: 3px solid red;
+}
+
+.form-text{
+  border-radius: 2px;
+  border: 1px solid #cccccc;
+}
+
+.form-text::placeholder{
+  font-size: 14px;
+  font-family: 'Montserrat' serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #bbbbbb; 
+  font-family: 'Montserrat';
+}
+
+button{
+  font-size: 18px;
+  font-family: 'Montserrat';
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+  width: 240px;
+  height: 66px;
+  background-color: #fed136;
+  border: none;
+  border-radius: 2px;
+  display: block;
+  margin: 30px auto 0;
+  outline: none;
+}
+
