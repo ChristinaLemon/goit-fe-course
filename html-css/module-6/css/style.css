@@ -211,6 +211,7 @@ h3{
 .team-list-card{
     margin-bottom: 30px;
     position: relative;
+    
 }
 
 .team-foto:hover{
@@ -229,6 +230,7 @@ h3{
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all 200ms linear;
 }
 
 .icon-list{
@@ -288,6 +290,7 @@ h3{
 
 .team-list-card:hover .team-foto{
     transform: translate(-10px, -10px);
+    transition: all 200ms linear;
 }
 
 .team-foto{
