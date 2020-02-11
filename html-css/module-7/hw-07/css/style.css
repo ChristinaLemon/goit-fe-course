@@ -51,8 +51,7 @@ main{
 .menu{
   display: flex;
   justify-content: space-between;
-  margin-top: 50px;
-  margin-bottom: 128px;
+  padding: 50px 0 128px;
 }
 
 .logo{
@@ -90,7 +89,8 @@ h2{
   font-size: 40px;
   color: #222222;
   text-align: center;
-  text-transform: uppercase ;  
+  text-transform: uppercase;
+  padding-bottom: 19px;  
 }
 
 .text{
@@ -98,7 +98,7 @@ h2{
   color: #777777;
   font-size: 16px;
   line-height: 1.2;
-  margin-bottom: 78px;
+  padding-bottom: 78px;
   font-family: 'Sriracha', cursive;
 }
   
@@ -107,8 +107,13 @@ h2{
   display: flex;
   justify-content: space-between;
   text-align: center;
+  margin-bottom: 120px;
+  
 }
 
+.icon-list li{
+  width: 274px;
+}
 .icon-basket::before{
   content: '';
   background-image: url(../image/Icon-Basket.png);
@@ -164,20 +169,23 @@ h3{
 .icon-list p{
   font-family: 'Roboto Slab';
   font-size: 14px;
-  width: 274px;
+  
   color: #777777;
   font-weight: 400;
 }
 
-footer{
-  background-image: url(../image/map.png);
+.registration{
+  background-image: url('../image/Map_Image.png');
+  background-repeat: no-repeat;
   height: 676px;
+  background-color: black;
+  background-position: right;
+  
 }
   
 .f-heading{
   color: #ffffff;
   padding-top: 110px;
-  padding-bottom: 22px;
 }
 
 .form{
@@ -194,7 +202,7 @@ footer{
 
 }
  .form-control{
-  width: 457px;
+  width: 100%;
   height: 52px;
   border: 1px solid #cccccc;
   margin-bottom: 28px;
@@ -207,8 +215,9 @@ footer{
   margin-bottom: 0;
 }
 
+
 textarea{
-  width: 455px;
+  width: calc(50% - 15px);
   padding: 20px 0px 0px 20px;
   resize: none;
   outline: none;
@@ -234,7 +243,7 @@ textarea:invalid:focus{
 
 .form-text::placeholder{
   font-size: 14px;
-  font-family: 'Montserrat' serif;
+  font-family: 'Montserrat';
   text-transform: uppercase;
   font-weight: 700;
   color: #bbbbbb; 
