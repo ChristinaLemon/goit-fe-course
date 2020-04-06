@@ -1,0 +1,23 @@
+
+link
+banner
+container
+menu
+    menu-logo
+
+menu-navigation
+    menu-navigation__item
+    menu-navigation__link
+
+heading
+
+features
+    features-title
+    features-list
+        features-list__item
+
+team
+    team-list
+        team__item
+        team__card
+        overlay
